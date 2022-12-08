@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <title>Marketplace</title>
+</head>
+<style>
+    body {
+        background-image: url("17545.jpg");
+        background-attachment: fixed;
+        background-size: 1400px;
+    }
+    .header {
+    background-image: url(MarketplaceHeader.png);
+    margin: 0px;
+    height: 650px;
+    text-align: center;
+    width: 1300px;
+    border-radius: 20px;     
+    }
+.cards-wrapper {
+        display: flex;
+     }
+     .card {
+        margin: 50px;
+        width:calc(80%/3);
+        transition: all 0.3s;
+        border-radius: 30px; 
+     }
+     .card:hover{
+        transform: scale(1.15);
+     }.image-wrapper {
+        height: 22vw;
+     }
+</style>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="logo.png" alt="logo" width="100px" height="100px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse fw-bolder fs-3" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fs-3 text-dark" href="#" role="button" data-bs-toggle="dropdown">Features</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item fs-5 fw-bold" href="FeaturesEstore.html">E-Store</a></li>
+                      <li><a class="dropdown-item fs-5 fw-bold" href="Marketplace.html">Marketplace</a></li>
+                      <li><a class="dropdown-item fs-5 fw-bold" href="Loyalty.html">Loyalty</a></li>
+                    </ul>
+                </li>    
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown">Pricing</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item fs-5 fw-bold" href="PricingEstore.html">E-Store</a></li>
+                        <li><a class="dropdown-item fs-5 fw-bold" href="PricingLoyalty.html">Loyalty</a></li>
+                    </ul> 
+                </li>      
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown">Promotions</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item fs-5 fw-bold" href="Discounts.html">Discounts</a></li>
+                        <li><a class="dropdown-item fs-5 fw-bold" href="Cashback.html">Cashback</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown">About Us</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item fs-5 fw-bold" href="OurCompany.html">Our Company</a></li>
+                        <li><a class="dropdown-item fs-5 fw-bold" href="VMG.html">VMG</a></li>
+                        <li><a class="dropdown-item fs-5 fw-bold" href="contactus.html">Contact Us</a></li>
+                    </ul> 
+                </li>                
+            </ul>                      
+        </div>
+        <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Search">
+            <button class="btn btn-success btn-lg fw-bold rounded-pill" type="button">Search</button>
+            <a href="Login.html" class="btn btn-lg btn-danger fw-bold rounded-pill">Login
+            </a>
+        </form>   
+         </div>                          
+    </nav>
+    <div class="header">        
+    </div>
+    <br>
+    <br>
+    <h1 style="font-family:Arial, Helvetica, sans-serif"><b> FRESH DEALS </b></h1>
+    <br>
+    <div id="JunmaxieCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="cards-wrapper">
+                <div class="card img-fluid">
+                    <img class="card-img-top" src="Bistro.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Bistro-BGC</h4>
+                      <p class="card-text"> Indulge in our wines and pastries.</p>
+                      <a href="#" class="btn btn-danger rounded-pill float-end">Order now</a>
+                    </div>
+                  </div>
+                  <div class="card img-fluid">
+                    <img class="card-img-top" src="Pizza.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Eastern Pizza</h4>
+                      <p class="card-text">Affordable yet delicious pizza.</p>
+                      <a href="#" class="btn btn-danger  rounded-pill float-end">Order now</a>
+                    </div>
+                  </div>
+                  <div class="card img-fluid">
+                    <img class="card-img-top" src="Jahu.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Jahu-Makati</h4>
+                      <p class="card-text">Authentic partisan pizza.</p>
+                      <a href="#" class="btn btn-danger  rounded-pill float-end">Order now</a>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+                <div class="card img-fluid">
+                    <img class="card-img-top" src="Elijah.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title"><b>Elijah Cakes and Pastries</b></h4>
+                      <p class="card-text"> Treat your family with these sweets.</p>
+                      <a href="#" class="btn btn-danger  rounded-pill float-end">Order now</a>
+                    </div>
+                  </div>
+                  <div class="card img-fluid">
+                    <img class="card-img-top" src="Burger.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Backyard Burger-Makati</h4>
+                      <p class="card-text">Quarter pound pure beef patty.</p>
+                      <a href="#" class="btn btn-danger  rounded-pill float-end">Order now</a>
+                    </div>
+                  </div>
+                  <div class="card img-fluid">
+                    <img class="card-img-top" src="Ramen.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">The Ramen House</h4>
+                      <p class="card-text">Itadakimasuuuuuuuu !!.</p>
+                      <a href="#" class="btn btn-danger  rounded-pill float-end">Order now</a>
+                    </div>
+                  </div>                
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+                <div class="card img-fluid">
+                    <img class="card-img-top" src="Sushi.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">The Sushi Pantry-BGC</h4>
+                      <p class="card-text"> Fresh and savory sushi in the metro.</p>
+                      <a href="#" class="btn btn-danger  rounded-pill float-end">Order now</a>
+                    </div>
+                  </div>  
+                  <div class="card img-fluid">
+                    <img class="card-img-top" src="Bento.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Bento sa Kanto</h4>
+                      <p class="card-text">Homemade and delicious bento for you.</p>
+                      <a href="#" class="btn btn-danger  rounded-pill float-end">Order now</a>
+                    </div>
+                  </div>  
+                  <div class="card img-fluid">
+                    <img class="card-img-top" src="Dimsum.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Dimsum Diner-BGC</h4>
+                      <p class="card-text"> Authentic Chinese dimsum.</p>
+                      <a href="#" class="btn btn-danger  rounded-pill float-end">Order now</a>
+                    </div>
+                  </div>  
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#JunmaxieCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#JunmaxieCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+        </button>          
+      </div>
+      <br>
+      <br>
+      <h1 style="font-family:Arial, Helvetica, sans-serif"><b> SEE YOUR FAVORITE BRANDS </b></h1>
+      <br>
+      <div id="JunmaxieCarouselOne" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="cards-wrapper">
+                <div class="card img-fluid">
+                    <img class="card-img-top" src="CAROUSEL3.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h3 class="card-title"><b>Pastalicious</b></h3>
+                      <p class="card-text">Italian pizza right at your doorsteps.</p>
+                      <a href="#" class="btn btn-danger  rounded-pill float-end">Order now</a>
+                    </div>
+                  </div>
+                  <div class="card img-fluid">
+                    <img class="card-img-top" src="carousel2.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h3 class="card-title"><b>Bran Burrito</b></h3>
+                      <p class="card-text"> Burritos worth dying for.</p>
+                      <a href="#" class="btn btn-danger  rounded-pill float-end">Order now</a>
+                    </div>
+                  </div>
+                  <div class="card img-fluid">
+                    <img class="card-img-top" src="wine.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h3 class="card-title"><b>The Wine Shop</b></h3>
+                      <p class="card-text">Wines in good and bad times.</p>
+                      <a href="#" class="btn btn-danger  rounded-pill float-end">Order now</a>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+                <div class="card img-fluid">
+                    <img class="card-img-top" src="Pancake.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h3 class="card-title"><b>The Pancake House</b></h3>
+                      <p class="card-text">Treat yourself with a delicious pancake.</p>
+                      <a href="#" class="btn btn-danger  rounded-pill float-end">Order now</a>
+                    </div>
+                  </div>
+                  <div class="card img-fluid">
+                    <img class="card-img-top" src="Fruit.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h3 class="card-title"><b>Fruitilicious</b></h3>
+                      <p class="card-text">Fruits all you like.</p>
+                      <a href="#" class="btn btn-danger  rounded-pill float-end">Order now</a>
+                    </div>
+                  </div>
+                  <div class="card img-fluid">
+                    <img class="card-img-top" src="Slice.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h3 class="card-title"><b> Sweet Tooth Pastries</b></h3>
+                      <p class="card-text">Sweets you cant resist.</p>
+                      <a href="#" class="btn btn-danger  rounded-pill float-end">Order now</a>
+                    </div>
+                  </div>                
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+                <div class="card img-fluid">
+                    <img class="card-img-top" src="Steak.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h3 class="card-title"><b>The Steak Corner</b></h3>
+                      <p class="card-text">Tender meat for your tender heart.</p>
+                      <a href="#" class="btn btn-danger  rounded-pill float-end">Order now</a>
+                    </div>
+                  </div>  
+                  <div class="card img-fluid">
+                    <img class="card-img-top" src="Fast.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h3 class="card-title"><b>Roadside Diner</b></h3>
+                      <p class="card-text">24/7 diner for your hungry tummy.</p>
+                      <a href="#" class="btn btn-danger  rounded-pill float-end">Order now</a>
+                    </div>
+                  </div>  
+                  <div class="card img-fluid">
+                    <img class="card-img-top" src="Silog.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h3 class="card-title"><b>Silog Express</b></h3>
+                      <p class="card-text">Filipino dish in an express.</p>
+                      <a href="#" class="btn btn-danger  rounded-pill float-end">Order now</a>
+                    </div>
+                  </div>  
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#JunmaxieCarouselOne" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#JunmaxieCarouselOne" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+        </button>          
+      </div>
+</body>
+</html>

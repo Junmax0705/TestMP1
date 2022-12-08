@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <title>My Mini Project 1</title>
+</head>
+<style>
+    body {
+        background-image: url("17545.jpg");
+        background-attachment: fixed;
+        background-size: 1400px;
+    }
+    .carousel-item {
+        height: 30rem;
+        background: transparent;
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: relative;
+        background-position: center;
+        background-size: 98%;
+        background-repeat: no-repeat;
+      
+     }
+     .container {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+     }
+     .cards-wrapper {
+        display: flex;
+     }
+     .card {
+        margin: 20px;
+        width:calc(100%/3);
+        transition: all 0.3s;
+     }
+     .card:hover{
+        transform: scale(1.15);
+     }
+     .image-wrapper {
+        height: 22vw;
+     }
+</style>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="logo.png" alt="logo" width="100px" height="100px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse fw-bolder fs-3" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fs-3 text-dark" href="#" role="button" data-bs-toggle="dropdown">Features</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item fs-5 fw-bold" href="FeaturesEstore.html">E-Store</a></li>
+                      <li><a class="dropdown-item fs-5 fw-bold" href="Marketplace.html">Marketplace</a></li>
+                      <li><a class="dropdown-item fs-5 fw-bold" href="Loyalty.html">Loyalty</a></li>
+                    </ul>
+                </li>    
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown">Pricing</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item fs-5 fw-bold" href="PricingEstore.html">E-Store</a></li>
+                        <li><a class="dropdown-item fs-5 fw-bold" href="PricingLoyalty.html">Loyalty</a></li>
+                    </ul> 
+                </li>      
+                <li class="nav-item dropdown fade-down">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown">Promotions</a>
+                    <ul class="dropdown-menu fade-down">
+                        <li><a class="dropdown-item fs-5 fw-bold" href="Discounts.html">Discounts</a></li>
+                        <li><a class="dropdown-item fs-5 fw-bold" href="Cashback.html">Cashback</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown">About Us</a>
+                    <ul class="dropdown-menu fade-down">
+                        <li><a class="dropdown-item fs-5 fw-bold" href="OurCompany.html">Our Company</a></li>
+                        <li><a class="dropdown-item fs-5 fw-bold" href="VMG.html">VMG</a></li>
+                        <li><a class="dropdown-item fs-5 fw-bold" href="contactus.html">Contact Us</a></li>
+                    </ul> 
+                </li>                
+            </ul>                       
+        </div>
+        <form class="d-flex">                
+                <input class="form-control me-2" type="text" placeholder="Search">
+                <button class="btn btn-success btn-lg fw-bold  rounded-pill" type="button">Search</button>                                        
+        </form>
+        </div>       
+    </nav>
+    <div id="Junmaxcarousel" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#Junmaxcarousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#Junmaxcarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#Junmaxcarousel" data-bs-slide-to="2"></li>
+            <li data-bs-target="#Junmaxcarousel" data-bs-slide-to="3"></li>
+        </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image:url('carousel2.webp');">
+        <div class="container">
+            <h1> ENJOY YOUR WEEKEND WITH 15% DISCOUNT </h1>
+            <p>Enjoy 15% discount capped at 300 for every buritto purchased every weekend. Click order now for the terms and conditions.</p>
+            <a href="Promo1.html" class="btn btn-lg btn-danger  rounded-pill">
+                Order now.
+            </a>
+        </div>
+        </div>
+        <div class="carousel-item" style="background-image:url('Carousel1.jpeg');">
+        <div class="container">
+            <h1> ENJOY CHRISTMAS SEASON WITH 10% DISCOUNTS IN BEVERAGES</h1>
+            </p>Enjoy holiday season with 10% discount on every wine purchase. Terms and conditions applied.</p>
+            <a href="Promo2.html" class="btn btn-lg btn-danger  rounded-pill">
+                Visit our store now.
+            </a>
+        </div>
+        </div>
+        <div class="carousel-item" style="background-image:url('CAROUSEL3.jpg');">
+        <div class="container">
+            <h1>PASTALICIOUS NOW OPEN TO SERVE YOU</h1>
+            <p>Order your favorite italian pasta in just one click! Free delivery, no minimum purchase required</p>
+            <a href="Promo3.html" class="btn btn-lg btn-danger  rounded-pill">
+                Click here.
+            </a>
+        </div>
+        </div>
+        <div class="carousel-item" style="background-image:url('carousel4.jpg')">
+            <div class="container">
+                <h1> MEDIUM RARE? MEDIUM? OR WELL DONE?</h1>
+                <p> Free delivery if you purchase with a minimum order of 400 pesos.</p>
+                <a href="Promo4.html" class="btn btn-lg btn-danger  rounded-pill">
+                    Free delivery.
+                </a>
+            </div>
+            </div>
+    </div>
+    </div>
+    <button class="carousel-control-prev" tpe="button" data-bs-target="#Junmaxcarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#Junmaxcarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+    </button>
+    <br>
+    <br>
+    <h1><b>Features</b></h1>
+    <br>
+    <br>
+    <div id="JunmaxieCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="cards-wrapper">
+                <div class="card img-fluid">
+                    <img class="card-img-top" src="card1.jpg" alt="Card image">
+                    <div class="card-img-overlay">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                      <h4 class="card-title">Marketplace</h4>
+                      <p class="card-text">Select a wide variety of food and beverages in the Marketplace.</p>
+                      <a href="Marketplace.html" class="btn btn-danger  rounded-pill">Visit our Marketplace</a>
+                    </div>
+                  </div>
+                  <div class="card img-fluid">
+                    <img class="card-img-top" src="Card2.jpg" alt="Card image">
+                    <div class="card-img-overlay">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                      <h4 class="card-title">Fast Delivery</h4>
+                      <p class="card-text">More delivery sercvices for your convenience.</p>
+                      <a href="EstoreDelivery.html" class="btn btn-danger  rounded-pill">Our partners</a>
+                    </div>
+                  </div>
+                  <div class="card img-fluid">
+                    <img class="card-img-top" src="Card3.jpg" alt="Card image">
+                    <div class="card-img-overlay">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                      <h4 class="card-title">More payment options</h4>
+                      <p class="card-text">Seamlessly pay via our other payment channels.</p>
+                      <a href="EstoreDiscover.html" class="btn btn-danger  rounded-pill">See mode of payments</a>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+                <div class="card img-fluid">
+                    <img class="card-img-top" src="Card3.jpg" alt="Card image">
+                    <div class="card-img-overlay">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                      <h4 class="card-title">More payment options</h4>
+                      <p class="card-text">Seamlessly pay via our other payment channels.</p>
+                      <a href="#" class="btn btn-danger  rounded-pill">See mode of payments</a>
+                    </div>
+                  </div>
+                  <div class="card img-fluid">
+                    <img class="card-img-top" src="Card3.jpg" alt="Card image">
+                    <div class="card-img-overlay">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                      <h4 class="card-title">More payment options</h4>
+                      <p class="card-text">Seamlessly pay via our other payment channels.</p>
+                      <a href="#" class="btn btn-danger  rounded-pill">See mode of payments</a>
+                    </div>
+                  </div>
+                  <div class="card img-fluid">
+                    <img class="card-img-top" src="Card3.jpg" alt="Card image">
+                    <div class="card-img-overlay">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                      <h4 class="card-title">More payment options</h4>
+                      <p class="card-text">Seamlessly pay via our other payment channels.</p>
+                      <a href="#" class="btn btn-danger  rounded-pill">See mode of payments</a>
+                    </div>
+                  </div>                
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+                <div class="card img-fluid">
+                    <img class="card-img-top" src="Card3.jpg" alt="Card image">
+                    <div class="card-img-overlay">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                      <h4 class="card-title">More payment options</h4>
+                      <p class="card-text">Seamlessly pay via our other payment channels.</p>
+                      <a href="#" class="btn btn-danger  rounded-pill">See mode of payments</a>
+                    </div>
+                  </div>  
+                  <div class="card img-fluid">
+                    <img class="card-img-top" src="Card3.jpg" alt="Card image">
+                    <div class="card-img-overlay">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                      <h4 class="card-title">More payment options</h4>
+                      <p class="card-text">Seamlessly pay via our other payment channels.</p>
+                      <a href="#" class="btn btn-danger  rounded-pill">See mode of payments</a>
+                    </div>
+                  </div>  
+                  <div class="card img-fluid">
+                    <img class="card-img-top" src="Card3.jpg" alt="Card image">
+                    <div class="card-img-overlay">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                      <h4 class="card-title">More payment options</h4>
+                      <p class="card-text">Seamlessly pay via our other payment channels.</p>
+                      <a href="#" class="btn btn-danger  rounded-pill">See mode of payments</a>
+                    </div>
+                  </div>  
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" tpe="button" data-bs-target="#JunmaxieCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#JunmaxieCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+        </button>          
+      </div>
+                
+</body>
+</html>
+    
